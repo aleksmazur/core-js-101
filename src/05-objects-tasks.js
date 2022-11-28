@@ -21,13 +21,9 @@
  *    console.log(r.getArea());   // => 200
  */
 function Rectangle(width, height) {
-  const r = {};
-  r.width = width;
-  r.height = height;
-  r.getArea = function () {
-    return this.height * this.width;
-  };
-  return r;
+  this.width = width;
+  this.height = height;
+  this.getArea = () => this.width * this.height;
 }
 
 
